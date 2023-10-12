@@ -1,0 +1,140 @@
+body{
+    font-family:'Poppins';
+    margin: 0;
+    padding: 0;
+}
+.p{
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between; /*crea un espacio entre los elementos*/
+    align-items: center; /*va a lineado con el display flex y hay que darselo al elemento que contiene le menu*/
+}
+
+.navegacion{
+    display: flex;
+}
+
+
+.titular{
+    text-align: center; 
+    margin-top: 150px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 40px; /*es un espaciado hacia abajo*/
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(201, 123, 231, 0.747);
+    padding: 20px 30px 20px 30px; /*el orden de padding es: top, right, bottom, left. Es el espaciado interno del elemento*/
+    color: black;
+}
+
+header{
+    background: url(./imagenes/fonodo-1.jpg);/*1920x800 aprox para el fondo*/
+    height: 95vh; /*vh: viewport height, me va a ocupar el 100% o lo que le pase del alto de la ventana*/
+    background-size: cover; /*para que se adapte a la ventana*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(to top,0%);
+}
+
+.contenedor{
+    max-width: 1280px; /*es para la resolucion de la pantalla*/
+    width: 90%;/*se corren los elementos de la nav*/
+    margin:auto;/*se pone auto para que los elementos esten centrados*/
+}
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafo-boton{
+    width: 50%;
+}
+
+img{
+    width: 25%;
+    height: 20%;
+    margin: auto;
+}
+
+.contenedor-parrafo-boton p{
+    font-size: 18px;
+}
+/*
+.contenedor-parrafo-boton a{
+    margin-top: 20px;
+    display: inline-block; /*esto se usa cuando le quiero dar margen a un elemento que es en linea
+}*/
+
+.parrafo-final{
+    margin-bottom: 30px;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap; /*hace cada elemento se adapte segun el contenido*/
+    justify-content: space-around; /*espacio entre los boxes*/
+}
+
+.servicio{
+    width: 23%;
+    padding: 50px 38px 50px 38px; /*el padding suma al borde del elemento, por lo tanto si agrego padding, tengo que modificar el width porque se suma*/
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: #ffff;
+}
+
+.celeste{
+    background: #40a8fa
+}
+
+.violeta{
+    background: #5055df;
+}
+
+.servicio h4{
+    font-size: 25px;
+    margin: 0;
+    width: 15px;
+}
+
+.servicio img{
+    float: right;
+    align-items:end;
+    margin-top: 20px;
+    height: auto;
+}
+
+.servicio p{
+    font-size: 18px;
+    margin-bottom: 25px;
+    align-items: normal;
+}
